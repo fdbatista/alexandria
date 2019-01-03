@@ -1,0 +1,104 @@
+@media (max-width: 350px) {
+    #menu-derecho-contenido {
+        margin-top: 110px;
+    }
+}
+
+@media (min-width: 351px) {
+    #menu-derecho-contenido {
+        margin-top: 100px;
+    }
+}
+
+.menu-derecho li:hover {
+    color: #fff;
+    background-color: #007d97;
+}
+
+.fa-menu-derecho {
+    position: relative;
+    display: table-cell;
+    width: 60px;
+    height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.menu-derecho:hover, nav.menu-derecho.expanded {
+    width: 250px;
+    overflow: visible;
+}
+
+.menu-derecho {
+    background-color: #00aed3;
+    position: fixed;
+    bottom: 0;
+    height: 100%;
+    /*right: 0;*/
+    width: 60px;
+    overflow: hidden;
+    -webkit-transition: width .1s linear;
+    transition: width .1s linear;
+    -webkit-transform: translateZ(0) scale(1, 1);
+    z-index: 5;
+}
+
+.menu-derecho > ul {
+    margin: 7px 0;
+}
+
+.menu-derecho li {
+    position: relative;
+    display: block;
+    width: 250px;
+}
+
+.menu-derecho li > a {
+    position: relative;
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #fff;
+    font-family: Arial;
+    font-size: 14px;
+    text-decoration: none;
+    -webkit-transform: translateZ(0) scale(1, 1);
+    -webkit-transition: all .1s linear;
+    transition: all .1s linear;
+}
+
+.menu-derecho .nav-text {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    width: 190px;
+    font-family: Arial, sans-serif;
+}
+
+.menu-derecho>ul.logout {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+nav {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+}
+
+nav ul, nav li {
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-activo {
+    background-color: #005060;
+}
